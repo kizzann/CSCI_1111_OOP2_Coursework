@@ -1,0 +1,33 @@
+                                            ClockPane
+
+-hour: int
+
+-minute: int
+
+-second: int
+
+----------------------------------------------------
+
++ClockPane()
+
++ClockPane(hour: int, minute: int, second: int)
+
++setCurrentTime(): void
+
++SetWidth(width: double): void
+
++setHeight(height: double): void
+
++hourHandVisible(hour: int)
+
++minuteHandVisible(minute: int)
+
++secondHandVisible(second: int)
+
+ 
+
+ 
+
+Since the "Visible" method is a boolean method, I would just make the hour and minute visible methods return true and the second visible method return false.
+
+ 
