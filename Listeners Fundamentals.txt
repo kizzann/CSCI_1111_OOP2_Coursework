@@ -1,0 +1,14 @@
+			JavaFX Listeners Fundamentals
+
+What graphical objects will you use to make this display?
+          - I will use buttons for up, down, left and right. I will use a circle to make the ball
+
+ 
+
+What listeners will you use?
+          -  No listeners were needed
+
+ 
+
+How will you check if the circle will stay on the screen?
+           - I will check to see if the centerX is greater than the width of the screen, and if so I will not let it pass the screenWidth. Also I will check to see of the centerY is greater than the height of the screen, and I will do the same as centerX and not let it pass the screenHeight.

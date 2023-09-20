@@ -1,0 +1,9 @@
+				Chapter 15 Animation Planning
+
+1) I will use a rectangle and a pentagon
+
+2) I will use an ObservableList<Double>
+
+3) I will make the rectangle follow the outline by using PathTransion.setPath to the pentagon
+
+4) I will change the rectangles opacity by using the FadeTransition
