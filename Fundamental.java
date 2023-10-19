@@ -1,24 +1,28 @@
-import java.util.Scanner;
+import java.util.ArrayList;
 
 public class Fundamental {
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in);
+        ArrayList<Integer> list = new ArrayList<Integer>();
+        list.add(14);
+        list.add(24);
+        list.add(14);
+        list.add(42);
+        list.add(25);
 
-        System.out.println("Enter the first integer: ");
-        int n1 = input.nextInt();
-        System.out.println("Enter the second integer: ");
-        int n2 = input.nextInt();
+        ArrayList<Integer> newList = removeDuplicates(list);
 
-        System.out.println(findGCD(n1, n2));
-
+        System.out.print(newList);
     }
-    private static int findGCD(int n1, int n2) {
-        int gcd = 1;
-        if(n1 % n2 == 0) {
-            return gcd = n2;
+
+    public static <E> ArrayList<E> removeDuplicates(ArrayList<E> list) {
+
+        ArrayList<E> newList = new ArrayList<>();
+
+        for(E element : list) {
+            if(!newList.contains(element)) {
+                newList.add(element);
+            }
         }
-        else{
-            return findGCD(n2, n1 % n2);
-        }
+        return newList;
     }
 }
